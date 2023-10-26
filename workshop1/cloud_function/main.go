@@ -1,4 +1,4 @@
-package main
+package p
 
 import (
 	"encoding/json"
@@ -26,7 +26,7 @@ func HelloWorld(w http.ResponseWriter, r *http.Request) {
 
 	// Do something with the request body
 	response := HelloWorldResponseBody{
-		NewMessage: body.Message + " . Make GDSC great again!",
+		NewMessage: body.Message + ". Make GDSC great again!",
 	}
 
 	// Encode the response
